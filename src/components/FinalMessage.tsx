@@ -14,7 +14,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Background with enhanced gradient */}
+      {}
       <div className="absolute inset-0 gradient-romantic" />
       <div 
         className="absolute inset-0"
@@ -23,7 +23,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
         }}
       />
 
-      {/* Floating hearts background */}
+      {}
       {[...Array(20)].map((_, i) => (
         <motion.div
           key={i}
@@ -53,7 +53,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
 
       {/* Main content */}
       <div className="relative z-10 text-center max-w-2xl">
-        {/* Large animated heart */}
+        {}
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -81,7 +81,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
           </motion.div>
         </motion.div>
 
-        {/* Title */}
+        {}
         <motion.h2
           className="font-romantic text-2xl md:text-4xl text-muted-foreground mb-4"
           initial={{ opacity: 0, y: 20 }}
@@ -91,7 +91,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
           {finalMessage.title}
         </motion.h2>
 
-        {/* Main message */}
+        {}
         <motion.h1
           className="font-romantic text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 text-glow"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -105,7 +105,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
           {finalMessage.message}
         </motion.h1>
 
-        {/* Subtitle */}
+        {}
         <motion.p
           className="font-romantic text-xl md:text-3xl text-primary italic"
           initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ const FinalMessage = ({ onRestart }: FinalMessageProps) => {
           {finalMessage.subtitle}
         </motion.p>
 
-        {/* Restart button */}
+        {}
         <motion.button
           className="romantic-button mt-12"
           onClick={onRestart}
