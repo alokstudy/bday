@@ -14,7 +14,7 @@ const Index = () => {
 
   // Set target date - change this to the actual birthday!
   // For demo, set to 5 seconds from now
-  const targetDate = new Date("2025-12-30T13:55:00");
+  const targetDate = new Date("2026-01-05T13:55:00");
 
   const handleCountdownComplete = useCallback(() => {
     setShowCountdown(false);
